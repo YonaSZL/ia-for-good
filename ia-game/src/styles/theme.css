@@ -5,6 +5,15 @@ body {
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+/* Appliquer la police par défaut ici */
+:root {
+  font-family: 'Gill Sans Nova', sans-serif; /* Choisir la police souhaitée ici */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cascadia Code', Monospaced, monospace !important;
+}
+
 /* Neutral theme */
 .theme-neutral {
   --primary-color: #6366f1;

@@ -47,14 +47,14 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onStart }) => {
       </motion.div>
       
       <motion.h1 
-        className="text-4xl md:text-5xl font-bold mb-4 font-serif text-gray-700"
+        className="text-4xl md:text-5xl font-bold mb-4 font-serif text-gray-400"
         variants={itemVariants}
       >
         Leader de Terranova
       </motion.h1>
       
       <motion.p 
-        className="text-xl mb-8 max-w-2xl text-gray-600"
+        className="text-xl mb-8 max-w-2xl text-gray-500"
         variants={itemVariants}
       >
         Le destin d'une nation — peut-être du monde entier — repose entre vos mains. Chaque décision que vous prendrez façonnera l'avenir de Terranova. Mènerez-vous l'humanité vers une utopie solarpunk durable, ou vos décisions à court terme créeront-elles un monde de désastre environnemental ?

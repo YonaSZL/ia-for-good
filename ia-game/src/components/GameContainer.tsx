@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { GameState, ThemeMode } from '../types';
+import { GameState } from '../types';
 import ScenarioCard from './ScenarioCard';
 import GameMetrics from './GameMetrics';
 import IntroScreen from './IntroScreen';
