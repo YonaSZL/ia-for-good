@@ -48,7 +48,7 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onStart }) => {
       </motion.div>
       
       <motion.h1 
-        className="text-4xl md:text-5xl font-bold mb-4 font-serif text-gray-800"
+        className="text-4xl md:text-5xl font-bold mb-4 font-serif text-gray-700"
         variants={itemVariants}
       >
         Leader de Terranova

@@ -28,13 +28,13 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     if (title) {
       switch (themeMode) {
         case 'utopia':
-          title.textContent = 'Terranova : Chemin vers le Solarpunk';
+          title.textContent = 'Éco-Réflexion : Chemin vers le Solarpunk';
           break;
         case 'dystopia':
-          title.textContent = 'Terranova : Ère du Déclin';
+          title.textContent = 'Éco-Réflexion : Ère du Déclin';
           break;
         default:
-          title.textContent = 'Terranova : Le Choix du Leader';
+          title.textContent = 'Éco-Réflexion : Le Choix du Leader';
       }
     }
   }, [themeMode]);
