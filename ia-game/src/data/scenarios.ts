@@ -17,6 +17,7 @@ export const scenarios: Scenario[] = [
           economy: -10,
         },
         nextScenarioId: 'renewable-energy',
+        tooltip: '🌱 Une planète plus verte, mais le chemin est long et sinueux.',
       },
       {
         id: 'economy-first',
@@ -28,6 +29,7 @@ export const scenarios: Scenario[] = [
           economy: 30,
         },
         nextScenarioId: 'economic-boom',
+        tooltip: `💰 Une économie florissante peut acheter du temps… ou l'épuiser.`,
       },
       {
         id: 'social-first',
@@ -39,6 +41,7 @@ export const scenarios: Scenario[] = [
           economy: 0,
         },
         nextScenarioId: 'social-harmony',
+        tooltip: `🤝 Un peuple uni est plus fort… mais la planète et l'économie attendent.`,
       },
     ],
   },
@@ -58,6 +61,7 @@ export const scenarios: Scenario[] = [
           economy: 5,
         },
         nextScenarioId: 'water-crisis',
+        tooltip: "🏘️ Lentement mais sûrement, les racines de l’avenir prennent forme localement.",
       },
       {
         id: 'corporate-partnership',
@@ -69,6 +73,7 @@ export const scenarios: Scenario[] = [
           economy: 15,
         },
         nextScenarioId: 'water-crisis',
+        tooltip: "🏭 L’énergie propre à grande vitesse… mais pour qui les bénéfices ?",
       },
       {
         id: 'mixed-approach',
@@ -80,6 +85,7 @@ export const scenarios: Scenario[] = [
           economy: 10,
         },
         nextScenarioId: 'water-crisis',
+        tooltip: "⚖️ Un équilibre délicat entre ambition et prudence.",
       },
     ],
   },
@@ -99,6 +105,7 @@ export const scenarios: Scenario[] = [
           economy: 20,
         },
         nextScenarioId: 'climate-disaster',
+        tooltip: '🚀 Croissance à tout prix… mais pour combien de temps encore ?',
       },
       {
         id: 'moderate-shift',
@@ -110,6 +117,7 @@ export const scenarios: Scenario[] = [
           economy: -5,
         },
         nextScenarioId: 'water-crisis',
+        tooltip: '⚙️ Ajuster les leviers sans tout casser.',
       },
       {
         id: 'green-investment',
@@ -121,6 +129,7 @@ export const scenarios: Scenario[] = [
           economy: -10,
         },
         nextScenarioId: 'green-transition',
+        tooltip: '🌿 Semer aujourd’hui pour récolter demain.',
       },
     ],
   },
@@ -140,6 +149,7 @@ export const scenarios: Scenario[] = [
           economy: 5,
         },
         nextScenarioId: 'water-crisis',
+        tooltip: '🌻 Petits gestes, grands effets.',
       },
       {
         id: 'cooperative-economy',
@@ -151,6 +161,7 @@ export const scenarios: Scenario[] = [
           economy: 10,
         },
         nextScenarioId: 'green-transition',
+        tooltip: '🤲 L\'économie partagée pour un avenir partagé.',
       },
       {
         id: 'traditional-development',
@@ -162,6 +173,7 @@ export const scenarios: Scenario[] = [
           economy: 25,
         },
         nextScenarioId: 'economic-boom',
+        tooltip: '📈 Le progrès rapide… au goût du passé.',
       },
     ],
   },
@@ -181,6 +193,7 @@ export const scenarios: Scenario[] = [
           economy: -10,
         },
         nextScenarioId: 'tech-revolution',
+        tooltip: '💧 Innover pour survivre, mais à quel prix énergétique ?',
       },
       {
         id: 'water-diplomacy',
@@ -192,6 +205,7 @@ export const scenarios: Scenario[] = [
           economy: 5,
         },
         nextScenarioId: 'international-cooperation',
+        tooltip: '🤝 Le dialogue peut faire jaillir l’eau.',
       },
       {
         id: 'water-military',
@@ -203,6 +217,7 @@ export const scenarios: Scenario[] = [
           economy: -15,
         },
         nextScenarioId: 'international-conflict',
+        tooltip: '🔫 Protéger l’eau… au prix de la paix.',
       },
     ],
   },
@@ -222,6 +237,7 @@ export const scenarios: Scenario[] = [
           economy: -25,
         },
         nextScenarioId: 'green-transition',
+        tooltip: '🔥 Quand il ne reste plus que le courage politique.',
       },
       {
         id: 'adaptation-focus',
@@ -233,6 +249,7 @@ export const scenarios: Scenario[] = [
           economy: -10,
         },
         nextScenarioId: 'dystopian-adaptation',
+        tooltip: '🏚️ Survivre au lieu de guérir.',
       },
       {
         id: 'blame-others',
@@ -244,6 +261,7 @@ export const scenarios: Scenario[] = [
           economy: -15,
         },
         nextScenarioId: 'collapse',
+        tooltip: '🧨 Chercher un coupable ne change pas la météo.',
       },
     ],
   },
@@ -262,6 +280,7 @@ export const scenarios: Scenario[] = [
           society: 10,
           economy: 5,
         },
+        tooltip: '💡 Accélérer la transition énergétique en investissant dans des technologies durables et des infrastructures vertes 🌱.',
         nextScenarioId: 'utopia-path',
       },
       {
@@ -273,6 +292,7 @@ export const scenarios: Scenario[] = [
           society: 20,
           economy: 10,
         },
+        tooltip: '⚖️ Adopter une stratégie mesurée pour assurer une transition équilibrée et soutenir tous les secteurs de la société 🌍.',
         nextScenarioId: 'utopia-path',
       },
       {
@@ -284,6 +304,7 @@ export const scenarios: Scenario[] = [
           society: 5,
           economy: 15,
         },
+        tooltip: '⏳ Prioriser les ajustements économiques pour assurer une stabilité à court terme, au détriment du rythme de la transition 🌍.',
         nextScenarioId: 'tech-revolution',
       },
     ],
@@ -303,6 +324,7 @@ export const scenarios: Scenario[] = [
           society: 20,
           economy: 10,
         },
+        tooltip: '🌍 Proposer un New Deal Vert mondial pour stimuler une action collective mondiale face à la crise climatique 🌱.',
         nextScenarioId: 'utopia-path',
       },
       {
@@ -314,6 +336,7 @@ export const scenarios: Scenario[] = [
           society: 10,
           economy: 15,
         },
+        tooltip: '🇺🇳 Participer à la coopération mondiale tout en protégeant les intérêts économiques et politiques de votre nation 🏙️.',
         nextScenarioId: 'tech-revolution',
       },
       {
@@ -325,6 +348,7 @@ export const scenarios: Scenario[] = [
           society: 5,
           economy: 5,
         },
+        tooltip: '🌏 Offrir un soutien symbolique pour la cause mondiale, tout en continuant à prioriser les intérêts nationaux ⚖️.',
         nextScenarioId: 'mixed-future',
       },
     ],
@@ -344,6 +368,7 @@ export const scenarios: Scenario[] = [
           society: 10,
           economy: 5,
         },
+        tooltip: '🤝 Rechercher une désescalade diplomatique pour apaiser les tensions internationales, mais au prix de votre réputation 🌍.',
         nextScenarioId: 'mixed-future',
       },
       {
@@ -355,6 +380,7 @@ export const scenarios: Scenario[] = [
           society: -30,
           economy: -20,
         },
+        tooltip: '⚔️ Redoubler d’efforts pour sécuriser les ressources essentielles, intensifiant ainsi les conflits mondiaux 🌍💥.',
         nextScenarioId: 'collapse',
       },
       {
@@ -366,6 +392,7 @@ export const scenarios: Scenario[] = [
           society: -5,
           economy: -15,
         },
+        tooltip: '🏠 Se concentrer sur l’autosuffisance et l’isolationnisme pour limiter les risques externes, mais avec des conséquences économiques 🌏.',
         nextScenarioId: 'dystopian-adaptation',
       },
     ],
@@ -385,6 +412,7 @@ export const scenarios: Scenario[] = [
           society: 30,
           economy: 15,
         },
+        tooltip: '🔓 Rendre les technologies accessibles à tous pour encourager l’innovation ouverte et l’amélioration locale 🌍🚀.',
         nextScenarioId: 'utopia-path',
       },
       {
@@ -396,6 +424,7 @@ export const scenarios: Scenario[] = [
           society: -10,
           economy: 30,
         },
+        tooltip: '🏢 Laisser les entreprises diriger la révolution technologique pour une expansion rapide mais inégale 🌎📈.',
         nextScenarioId: 'mixed-future',
       },
       {
@@ -407,10 +436,11 @@ export const scenarios: Scenario[] = [
           society: 15,
           economy: 5,
         },
+        tooltip: '🏛️ Gérer les technologies de manière centralisée pour garantir une distribution équitable mais au rythme plus lent 🕰️.',
         nextScenarioId: 'mixed-future',
       },
     ],
-  },
+  },  
   {
     id: 'dystopian-adaptation',
     title: 'Mode Survie',
@@ -427,6 +457,7 @@ export const scenarios: Scenario[] = [
           economy: -15,
         },
         nextScenarioId: 'mixed-future',
+        tooltip: '🌱 Dernière chance de restaurer l\'environnement, avec de l\'espoir pour un futur plus vert 🌍.',
       },
       {
         id: 'accept-reality',
@@ -438,6 +469,7 @@ export const scenarios: Scenario[] = [
           economy: 10,
         },
         nextScenarioId: 'dystopia-ending',
+        tooltip: '🛠️ S\'adapter à la dure réalité et maximiser les technologies pour survivre dans un monde hostile ⚡.',
       },
       {
         id: 'elite-havens',
@@ -449,6 +481,7 @@ export const scenarios: Scenario[] = [
           economy: 5,
         },
         nextScenarioId: 'dystopia-ending',
+        tooltip: '🏰 Créer des refuges pour l\'élite au détriment de la majorité 🌍💔.',
       },
     ],
   },
@@ -468,6 +501,7 @@ export const scenarios: Scenario[] = [
           economy: 10,
         },
         nextScenarioId: 'utopia-ending',
+        tooltip: '📚 Investir dans l\'éducation pour préparer les futures générations à un monde durable 🌍👩‍🏫.',
       },
       {
         id: 'green-innovation',
@@ -479,6 +513,7 @@ export const scenarios: Scenario[] = [
           economy: 25,
         },
         nextScenarioId: 'utopia-ending',
+        tooltip: '💡 Encourager l\'innovation verte pour rendre le monde encore plus durable et prospère 🌱⚙️.',
       },
       {
         id: 'rewild-earth',
@@ -490,6 +525,7 @@ export const scenarios: Scenario[] = [
           economy: 5,
         },
         nextScenarioId: 'utopia-ending',
+        tooltip: '🌳 Restaurer la nature pour créer un environnement résilient et prospère 🦋🌍.',
       },
     ],
   },
@@ -509,6 +545,7 @@ export const scenarios: Scenario[] = [
           economy: 15,
         },
         nextScenarioId: 'mixed-ending',
+        tooltip: '⚖️ Maintenir l\'équilibre pour un progrès stable et durable dans un monde imparfait 🌍.',
       },
       {
         id: 'push-further',
@@ -520,6 +557,7 @@ export const scenarios: Scenario[] = [
           economy: 10,
         },
         nextScenarioId: 'utopia-ending',
+        tooltip: '🚀 Profiter de la stabilité pour initier des changements plus ambitieux et rapprocher l\'utopie 🌱.',
       },
       {
         id: 'consolidate-gains',
@@ -531,6 +569,7 @@ export const scenarios: Scenario[] = [
           economy: 25,
         },
         nextScenarioId: 'mixed-ending',
+        tooltip: '💰 Consolider les acquis tout en priorisant la prospérité économique, bien que l\'environnement en souffre un peu 🌍💼.',
       },
     ],
   },
@@ -550,6 +589,7 @@ export const scenarios: Scenario[] = [
           economy: 10,
         },
         nextScenarioId: 'dystopian-adaptation',
+        tooltip: '🚨 Mettre en place un plan d\'urgence pour éviter le chaos et restaurer une stabilité minimale 🌍⏳.',
       },
       {
         id: 'authoritarian-control',
@@ -561,6 +601,7 @@ export const scenarios: Scenario[] = [
           economy: 5,
         },
         nextScenarioId: 'dystopia-ending',
+        tooltip: '⚖️ Utiliser le contrôle autoritaire pour maintenir l\'ordre, mais avec des conséquences graves sur la liberté et l\'environnement ⚡.',
       },
       {
         id: 'accept-collapse',
@@ -572,6 +613,7 @@ export const scenarios: Scenario[] = [
           economy: -40,
         },
         nextScenarioId: 'dystopia-ending',
+        tooltip: '📚 Accepter l\'effondrement pour préserver les connaissances et laisser l\'espoir à l\'avenir 🌱💔.',
       },
     ],
   },
@@ -598,7 +640,8 @@ export const scenarios: Scenario[] = [
     image: 'https://images.pexels.com/photos/6152103/pexels-photo-6152103.jpeg',
     isEnding: true,
     choices: [],
-  },
+  }
+  
 ];
 
 export const getScenario = (id: string): Scenario | undefined => {

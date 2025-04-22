@@ -28,18 +28,26 @@ const ChoiceButton: React.FC<ChoiceButtonProps> = ({ choice, onClick }) => {
       transition={{ duration: 0.3 }}
       whileHover={{ scale: 1.01 }}
     >
-      <button
-        onClick={handleClick}
-        disabled={showConsequence}
-        className={`w-full text-left p-4 rounded-lg border-2 transition-all duration-300 flex justify-between items-center ${
-          showConsequence 
-            ? 'border-indigo-500 bg-indigo-50' 
-            : 'border-gray-300 hover:border-indigo-300 hover:bg-indigo-50'
-        }`}
-      >
-        <span className="flex-1 text-lg font-medium">{choice.text}</span>
-        <ArrowRight className="ml-2 text-indigo-600" size={20} />
-      </button>
+    <div className="relative group">
+  <button
+    onClick={handleClick}
+    disabled={showConsequence}
+    className={`w-full text-left p-4 rounded-lg border-2 transition-all duration-300 flex justify-between items-center ${
+      showConsequence 
+        ? 'border-indigo-500 bg-indigo-50' 
+        : 'border-gray-300 hover:border-indigo-300 hover:bg-indigo-50'
+    }`}
+  >
+    <span className="flex-1 text-lg font-medium">{choice.text}</span>
+    <ArrowRight className="ml-2 text-indigo-600" size={20} />
+  </button>
+
+  {choice.tooltip && (
+    <div className="absolute left-0 bottom-full mb-2 z-50 w-max max-w-xs px-3 py-1 text-sm text-white bg-gray-800 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+      {choice.tooltip}
+    </div>
+  )}
+</div>
       
       {showConsequence && (
         <motion.div 

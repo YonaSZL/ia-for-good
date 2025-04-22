@@ -8,6 +8,7 @@ export interface Choice {
     economy: number;
   };
   nextScenarioId: string;
+  tooltip?: string;
 }
 
 export interface Scenario {
