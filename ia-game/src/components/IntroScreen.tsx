@@ -44,7 +44,7 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onStart }) => {
         className="mb-6 text-emerald-600"
         variants={itemVariants}
       >
-        <Globe size={80} />
+        <img src="./src/assets/icon.png" alt="Icon du jeu" className="size-40 object-contain" />
       </motion.div>
       
       <motion.h1 
