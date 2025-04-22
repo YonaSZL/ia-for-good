@@ -1,0 +1,121 @@
+/* Theme styles */
+
+/* Base theme transitions */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Neutral theme */
+.theme-neutral {
+  --primary-color: #6366f1;
+  --secondary-color: #8b5cf6;
+  --accent-color: #3b82f6;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
+  
+  --bg-gradient-from: #f8fafc;
+  --bg-gradient-to: #e2e8f0;
+  
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+}
+
+/* Utopia theme */
+.theme-utopia {
+  --primary-color: #10b981;
+  --secondary-color: #06b6d4;
+  --accent-color: #3b82f6;
+  --success-color: #22c55e;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
+  
+  --bg-gradient-from: #ecfdf5;
+  --bg-gradient-to: #d1fae5;
+  
+  --card-bg: #ffffff;
+  --card-border: #6ee7b7;
+  
+  --text-primary: #064e3b;
+  --text-secondary: #065f46;
+}
+
+/* Dystopia theme */
+.theme-dystopia {
+  --primary-color: #6b7280;
+  --secondary-color: #4b5563;
+  --accent-color: #9ca3af;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --error-color: #ef4444;
+  
+  --bg-gradient-from: #1f2937;
+  --bg-gradient-to: #111827;
+  
+  --card-bg: #374151;
+  --card-border: #4b5563;
+  
+  --text-primary: #f9fafb;
+  --text-secondary: #e5e7eb;
+}
+
+/* Apply theme variables */
+.theme-neutral, .theme-utopia, .theme-dystopia {
+  background: linear-gradient(to bottom right, var(--bg-gradient-from), var(--bg-gradient-to));
+  color: var(--text-primary);
+}
+
+.theme-utopia .bg-white {
+  background-color: #fdfdfd;
+  border-color: var(--card-border);
+}
+
+.theme-dystopia .bg-white {
+  background-color: var(--card-bg);
+  color: var(--text-primary);
+  border-color: var(--card-border);
+}
+
+.theme-dystopia .text-gray-800 {
+  color: var(--text-primary);
+}
+
+.theme-dystopia .text-gray-600 {
+  color: var(--text-secondary);
+}
+
+.theme-dystopia .border-gray-200 {
+  border-color: var(--card-border);
+}
+
+/* Button style overrides */
+.theme-utopia button.bg-emerald-600 {
+  background-color: var(--primary-color);
+}
+
+.theme-utopia button.hover\:bg-emerald-700:hover {
+  background-color: #0d9668;
+}
+
+.theme-dystopia button.bg-emerald-600,
+.theme-dystopia button.bg-indigo-600 {
+  background-color: var(--primary-color);
+}
+
+.theme-dystopia button.hover\:bg-emerald-700:hover,
+.theme-dystopia button.hover\:bg-indigo-700:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Animation for theme transitions */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.theme-utopia, .theme-dystopia {
+  animation: fadeIn 1s ease-in-out;
+}
