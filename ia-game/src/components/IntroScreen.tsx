@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Globe } from 'lucide-react';
 
 interface IntroScreenProps {
   onStart: (playerName: string) => void;
